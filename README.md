@@ -1,1 +1,1 @@
-"# LB&T Penguins" 
+# LB&T Penguins
