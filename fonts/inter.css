@@ -1,0 +1,61 @@
+/* Inter font family definitions */
+
+/* Text fonts (18pt or lower) */
+
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: normal;
+        src: url("Inter-Regular.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: normal;
+        src: url("Inter-Italic.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        src: url("Inter-Bold.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: bold;
+        src: url("Inter-BoldItalic.woff2") format("woff2");
+    }
+
+/* Display fonts (19pt or higher) */
+
+    @font-face {
+        font-family: "Inter Display";
+        font-style: normal;
+        font-weight: normal;
+        src: url("InterDisplay-Regular.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Inter Display";
+        font-style: italic;
+        font-weight: normal;
+        src: url("InterDisplay-Italic.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Inter Display";
+        font-style: normal;
+        font-weight: bold;
+        src: url("InterDisplay-Bold.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Inter Display";
+        font-style: italic;
+        font-weight: bold;
+        src: url("InterDisplay-BoldItalic.woff2") format("woff2");
+    }

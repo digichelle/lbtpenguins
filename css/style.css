@@ -1,2 +1,148 @@
 /* Stylesheet for lbtpenguins.org */
 
+/* Import Inter font definitions */
+    @import url("../fonts/inter.css");
+
+/* Base properties */
+
+:root {
+    --textFont: "Inter", sans-serif;
+    --displayFont: "Inter Display", sans-serif;
+    --accentColor: #004e77;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--textFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and navigation bar */
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100px;
+    background-color: var(--accentColor);
+    color: inherit;
+}
+
+h1 {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav a,
+nav a:visited,
+nav a:focus,
+nav a:hover,
+nav a:active {
+    display: block;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    float: left;
+    background-color: inherit;
+    color: white;
+}
+
+nav li#userMenu {
+    margin-left: 8px;
+    background-color: yellow;
+    color: inherit;
+}
+
+nav li#userMenu:focus,
+nav li#userMenu:hover {
+    background-color: black;
+    color: white;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 4px 8px;
+}
+
+nav li:hover,
+nav li:focus {
+    background-color: black;
+    color: white;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 4px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav ul li:hover > ul,
+nav ul li:focus-within > ul,
+nav ul ul:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    border: 1px solid black;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+/* Main content area */
+
+main {
+    display: grid;
+    grid-template-columns: 67% 33%;
+}
+
+main > div {
+    padding: 20px;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 20px;
+    background-color: #eeeeee;
+    color: inherit;
+    font-size: 0.75rem;
+}
